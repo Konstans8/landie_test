@@ -1,0 +1,164 @@
+@media (max-width: 1200px) {
+
+    .about__container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about__one {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    
+    .about__two {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .about__three {
+        grid-column: 1;
+        grid-row: 4;
+        margin-right: 0px;
+    }
+    
+    .about__four {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        background-position-x: 190px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__burger-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .open {
+        display: block;
+        
+    }
+
+    .header__close-img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__item-media {
+        margin-bottom: 20px;
+    }
+
+    .header__btn-container {
+        margin-left: 0px; 
+
+        button {
+            padding: 6px 20px;
+        }
+
+    }
+}
+
+
+@media(max-width: 640px) {
+
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .hero__title {
+        width: 320px;
+        font-size: 30px;
+    }
+
+    .hero__descr {
+        width: 300px;
+    }
+
+    .about__container {
+        grid-template-columns: 400px;
+        gap: 30px 0;
+        justify-items: normal;
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .about__descr {
+            width: 100%;
+        }
+    }
+
+    .about__four {
+        margin-left: 0;
+    }
+    
+
+    .about__item-container {
+        flex-direction: column;
+
+        div {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about__two,
+    .about__three {
+        width: 50%;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .price {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .price__container {
+        h3 {
+            font-size: 26px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    
+
+    .price__descr {
+        display: none;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__navigation {
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 440px) {
+    .about__container {
+        grid-template-columns: 260px;
+    }
+}

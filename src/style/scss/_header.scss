@@ -1,0 +1,98 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+nav {
+    ul {
+        display: flex;
+
+        li {
+            .header__link {
+                color: $text-light;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                padding-bottom: 2px;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    left: calc(-100%);
+                    background-color: $text-light;
+                    transition: 0.3s ease-in-out;
+                    opacity: 0.5;
+                }
+
+                &:hover:before {
+                    left: 0;
+                }
+            }
+        }
+
+        li:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+}
+
+.header__logo {
+    h1 {
+        font-family: 'Roboto-Black';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 38px;
+        color: $text-titles;
+        cursor: pointer;
+    }
+}
+
+.header__btn-container {
+    margin-left: 90px;
+
+    button {
+        @include button;
+        padding: 4px 55px;
+    }
+}
+
+
+.header__burger {
+    display: none;
+}
+
+.header__nav-media {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    transition: all .3s ease;
+
+
+    .header__list-media {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px 30px 40px;
+        background-image: url(/images/menu.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .header__item-btn {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 230px;
+    padding-bottom: 390px;
+}
+
+.hero__title {
+    width: 540px;
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: $text-titles;
+    margin-bottom: 20px;
+}
+
+.hero__descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-light;
+    width: 530px;
+    margin-bottom: 15px;
+}
+
+.hero__btn-left {
+    margin-top: 55px;
+    @include button;
+    padding: 9px 40px;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.hero__btn-right {
+    margin-top: 55px;
+    @include button-border;
+    padding: 7px 50px;
+    font-size: 16px;
+}
+
+
+
+
+// .hero__image {
+//     position: absolute;
+//     top: -12px;
+//     right: -176px;
+//     z-index: -1;
+// }

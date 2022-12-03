@@ -1,0 +1,52 @@
+@mixin button {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 3px;
+    color: $text-white;
+    background-color: $button;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $text-light;
+    }
+
+    &:focus {
+        background-color: $text-nav-footer;
+    }
+
+    &:active {
+        background-color: $logo;
+    }
+}
+
+@mixin button-border {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 3px;
+    border: 2px solid #454E54;
+    background-color: #ffffff;
+    color: $text-titles;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $text-light;
+        color: $text-white;
+    }
+
+    &:focus {
+        background-color: $text-nav-footer;
+        color: $text-white;
+    }
+
+    &:active {
+        background-color: $logo;
+        color: $text-white;
+    }
+}
